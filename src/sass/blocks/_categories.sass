@@ -4,103 +4,107 @@
 	min-height: 740px
 	&_title
 		text-align: center
+		margin-bottom: 75px
+
 	.main
+		cursor: pointer
 		position: relative
+		height: 485px
+		width: 350px
+		&:hover
+			.front 
+				transform: rotateY(180deg)
+		&:hover
+			.back 
+				transform: rotateY(360deg)
+		.front, .back
+			transition: 0.5s
+			backface-visibility: hidden
 		.front
 			position: absolute
-			display: flex
-			justify-content: center
-			align-items: center
+			transform: rotateY(0deg)
+			.categories_front
+				padding: 210px 0 0 16px
+				height: 485px
+				width: 350px
+
+				&_1
+					background: url('../img/categories/man1.png') center (center / cover) no-repeat
+				&_2
+					background: url('../img/categories/man2.png') center (center / cover) no-repeat
+				&_3
+					background: url('../img/categories/woman2.png') center (center / cover) no-repeat
+				&_title
+					font-weight: 700
+					font-size: 36px
+					line-height: 36px
+					color: #000000
+					margin-bottom: 15px
+				&_inf
+					font-weight: 600
+					font-size: 30px
+					line-height: 38px
+					color: #000000
+				&_near
+					font-weight: 500
+					font-size: 30px
+					line-height: 38px
+					color: $main-color
+				&_org
+					font-weight: 100
+					font-size: 30px
+					line-height: 38px
+					color: #000000
 		.back
-			position: absolute
 			transform: rotateY(180deg)
-			display: flex
-			justify-content: center
-			align-items: center
-
-	&_front
-		padding: 210px 0 0 16px
-		margin-top: 75px
-		height: 485px
-		width: 350px
-
-		&_1
-			background: url('../img/categories/man1.png') center (center / cover) no-repeat
-		&_2
-			background: url('../img/categories/man2.png') center (center / cover) no-repeat
-		&_3
-			background: url('../img/categories/woman2.png') center (center / cover) no-repeat
-		&_title
-			font-weight: 700
-			font-size: 36px
-			line-height: 36px
-			color: #000000
-			margin-bottom: 15px
-		&_inf
-			font-weight: 600
-			font-size: 30px
-			line-height: 38px
-			color: #000000
-		&_near
-			font-weight: 500
-			font-size: 30px
-			line-height: 38px
-			color: $main-color
-		&_org
-			font-weight: 100
-			font-size: 30px
-			line-height: 38px
-			color: #000000
-	&_back
-		padding: 10px 16px
-		margin-top: 75px
-		height: 485px
-		width: 350px
-		background: #fff
-
-		position: absolute
-		&_title 
-			font-weight: 700
-			font-size: 40px
-			line-height: 45px
-			color: #000000
-			margin-bottom: 10px
-		&_address
-			font-weight: 400
-			font-size: 28px
-			line-height: 30px
-			color: $bg_color
-			margin-bottom: 10px
-		&_near
-			font-weight: 700
-			font-size: 36px
-			line-height: 30px
-			color: #000000
-			margin-bottom: 10px
-		&_data
-			font-weight: 700
-			font-size: 28px
-			line-height: 35px
-			color: #3D342B
-			margin-bottom: 10px
-			span
-				font-weight: 400
-		&_btn
-			display: flex
-			justify-content: space-between
-			&_1
-				width: 140px
-				height: 50px
-				font-size: 18px
-			&_2
-				width: 140px
-				height: 50px
-				font-size: 18px
-				background: #F1B913
-				margin-right: 10px
-				&:hover
-					background: #a57d07
-					transition: 0.2s all 
-				&:focus
-					outline: none
+			.categories_back
+				padding: 10px 16px
+				height: 485px
+				width: 350px
+				background: #fff
+				position: absolute
+				&_title 
+					font-weight: 700
+					font-size: 40px
+					line-height: 45px
+					color: #000000
+					margin-bottom: 10px
+				&_address
+					font-weight: 400
+					font-size: 28px
+					line-height: 30px
+					color: $bg_color
+					margin-bottom: 10px
+				&_near
+					font-weight: 700
+					font-size: 36px
+					line-height: 30px
+					color: #000000
+					margin-bottom: 10px
+				&_data
+					font-weight: 700
+					font-size: 28px
+					line-height: 35px
+					color: #3D342B
+					margin-bottom: 10px
+					span
+						font-weight: 400
+				&_btn
+					display: flex
+					justify-content: space-between
+					&_1
+						width: 140px
+						height: 50px
+						font-size: 18px
+					&_2
+						width: 140px
+						height: 50px
+						font-size: 18px
+						background: #F1B913
+						margin-right: 10px
+						&:hover
+							background: #a57d07
+							transition: 0.2s all 
+						&:focus
+							outline: none
 
