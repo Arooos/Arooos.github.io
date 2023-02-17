@@ -1,0 +1,28 @@
+=btn
+	font-family: 'Roboto'
+	font-weight: 300
+	letter-spacing: 1px
+	font-size: 24px
+	text-align: center
+	color: #FFFFFF
+	background: $main-color
+	border: none
+	border-radius: 28px
+	+btn_hover
+	&:focus
+		outline: none
+=btn_hover
+	&:hover
+		background: #974900
+		transition: 0.2s all 
+		&:active
+			border: none
+=link_hover
+	&:hover
+		color: $main-color
+		text-decoration: underline
+		transition: 0.2s all
+=date_hover
+	&:hover
+		color: #974900
+		transition: 0.2s all
