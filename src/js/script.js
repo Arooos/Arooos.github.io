@@ -1,4 +1,19 @@
+// const animItems = document.querySelectorAll('.promo')
+// if (animItem.length > 0) {
+//     function animOnScroll(params) {
+//         for (let index = 0; index < animItems,length; index++) {
+//             const animItem = animItem[index];
+//             const animItemHeight = animItem.offsetHeight;
+//             const animItemOffset = 
+//         }
+//     }
+//     function offset(el)
+//         const rect = el.getBoundingClientRect(),
+//             scrollleft = win
+// }
+
 $(document).ready(function(){
+
     $('.carousel__inner').slick({
         infinite: true,
         slidesToShow: 1,
@@ -18,7 +33,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="icons/next.svg"></button>'
     });
 
-
+    
     $('[data-modal=tournament]').on('click', function(){
         $('.overlay, #tournament').fadeIn('o.5s');
     })
@@ -59,7 +74,7 @@ $(document).ready(function(){
         }).done(function() {
             $(this).find("input").val("");
             $('#tournament').fadeOut();
-            $('.overlay, #thanks').fadeIn('slow');
+            $('.overlay, #thanks').fadeIn('0.5s');
 
             $('form').trigger('reset');
         });
@@ -70,5 +85,13 @@ $(document).ready(function(){
         $("body").addClass("modal-open");
     }).on("hidden", function () {
         $("body").removeClass("modal-open")
+    });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >650) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
     });
 });
