@@ -12,6 +12,23 @@
 //             scrollleft = win
 // }
 
+// const showDialog = () => {
+//     document.getElementById('modal_tour').classList.add('show')
+//     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+//     const body = document.body;
+//     body.style.position = 'fixed';
+//     body.style.top = `-${scrollY}`;
+//   };
+//   const closeDialog = () => {
+//     const body = document.body;
+//     const scrollY = body.style.top;
+//     body.style.position = '';
+//     body.style.top = '';
+//     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+//     document.getElementById('modal_tour').classList.remove('show');
+//   }
+
+
 $(document).ready(function(){
 
     $('.carousel__inner').slick({
@@ -43,8 +60,11 @@ $(document).ready(function(){
     $('[data-modal=workout]').on('click', function(){
         $('.overlay, #workout').fadeIn('o.5s');
     })
+    $('[data-modal=modal_tour]').on('click', function(){
+        $('.overlay, #modal_tour').fadeIn('o.5s');
+    })
     $('.modal_close').on('click', function(){
-        $('.overlay, #tournament, #participants, #workout, #thanks').fadeOut('o.5s')
+        $('.overlay, #tournament, #participants, #workout, #modal_tour, #thanks, #stop').fadeOut('o.5s')
     })
 
     $('order form').validate();
@@ -94,4 +114,6 @@ $(document).ready(function(){
             $('.pageup').fadeOut();
         }
     });
+
+   
 });

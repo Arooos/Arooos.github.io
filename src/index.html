@@ -206,9 +206,9 @@
                 <div class="title">ИСТОРИЯ НАШИХ ТУРНИРОВ</div>
                 <div class="carousel__history menu">
                     <div>
-                        <a href=""><div class="carousel__history__item grey">
-                            <div class="carousel__history__title">2022</div>
-                        </div></a>
+                        <button data-modal="modal_tour" class="carousel__history__item grey">
+                                <div class="carousel__history__title">2022</div>
+                        </button>
                     </div>
                     <div>
                         <a href=""><div class="carousel__history__item braun">
@@ -334,7 +334,6 @@
                 <button class="btn modal_btn modal_btn_mt15">записаться</button>
             </form>
         </div>
-
         <div class="modal" id="participants">
             <div class="modal_close">&times;</div>
             <div>
@@ -373,14 +372,13 @@
         </div>
 
         <div class="modal modal_mini" id="thanks">
-            <div class="modal_close">&times;</div>
+            <div class="modal_close" onClick='closeDialog()'>&times;</div>
             <div class="modal_title">Спасибо за вашу заявку!</div>
             <div class="modal_subtitle">Организатор свяжется с вами в<br>ближайшее время!</div>
         </div>
 
         <div class="modal_tour" id="modal_tour">
             <div class="modal_close">&times;</div>
-            <div class="container">
                 <div class="modal_tour_body">
                     <div class="row">
                         <div class="col-md-3">
@@ -390,32 +388,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div> 
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div>25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
+                                <button><div class ="modal_tour_item_title">25.12</div></button>
+                                
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -452,32 +426,12 @@
                             <div class="modal_tour_item">
                                 <div class ="modal_tour_item_title">25.12</div>
                             </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
                         </div> 
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div>25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="modal_tour_item">
-                                <div class ="modal_tour_item_title">25.12</div>
-                            </div>
-                        </div>
                         <div class="col-md-3">
                             <div class="modal_tour_item">
                                 <div class ="modal_tour_item_title">25.12</div>
@@ -500,7 +454,52 @@
                         </div> 
                         <div class="col-md-3">
                             <div class="modal_tour_item">
-                                <div>25.12</div>
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
+                            </div>
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="modal_tour_item">
+                                <div class ="modal_tour_item_title">25.12</div>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -525,8 +524,6 @@
                         </div>
                     </div> 
                 </div>
-                 
-            </div>
         </div>
     </div>
 
@@ -576,3 +573,12 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+<button id='show' onClick='showDialog()'>Show Dialog</button>
+<div id='text'>
+  ffhjdfvksdsnksdbkcbdk
+</div>
+<div id='dialog'>
+  <span>Oh wow, modal! We can close this now.</span>
+  <button id='close' onClick='closeDialog()'>Close Dialog</button>
+</div>
