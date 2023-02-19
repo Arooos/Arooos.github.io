@@ -63,8 +63,14 @@ $(document).ready(function(){
     $('[data-modal=modal_tour]').on('click', function(){
         $('.overlay, #modal_tour').fadeIn('o.5s');
     })
+    $('[data-modal=modal_history]').on('click', function(){
+        $('.overlay, #modal_history').fadeIn('o.5s');
+    })
     $('.modal_close').on('click', function(){
-        $('.overlay, #tournament, #participants, #workout, #modal_tour, #thanks, #stop').fadeOut('o.5s')
+        $('.overlay, #tournament, #participants, #workout, #modal_tour, #thanks, #stop, #modal_history').fadeOut('o.5s')
+    })
+    $('.modal_history_close').on('click', function(){
+        $('#modal_history').fadeOut('o.5s')
     })
 
     $('order form').validate();

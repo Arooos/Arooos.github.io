@@ -1,17 +1,19 @@
 .orange
     background: $main_color
-
+    &:hover
+        background: #915000
 .braun
     background: #30281E
-
+    &:hover
+        background: #292015
 .grey
     background: #5A4E3F
- 
+    &:hover
+        background: #41392f
 .history
     padding-top: 80px
     background: $bg_color
 .carousel
-
     &__history
         margin-top: 60px
         &__item
@@ -22,6 +24,8 @@
             align-items: center
             border-radius: 28px
             margin: 0 auto
+            border: none
+            +btn_active
         &__title
             font-weight: 600
             font-size: 96px

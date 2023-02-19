@@ -4,7 +4,6 @@
     height: 100%
     top: 0
     background: rgba(0, 0, 0, 0.48)
-    
     display: none
 .modal
     padding: 30px 70px
@@ -26,6 +25,7 @@
         line-height: 40px
         color: #000
         cursor: pointer
+
     &_title
         font-weight: 700
         font-size: 40px
@@ -106,8 +106,121 @@
                 top: 0
                 width: 5px
                 text-align: right
+    &_tour
+        padding: 30px 30px
+        min-width: 1000px
+        min-height: 180px
+        background: $bg_color
+        overflow-y: initial !important
+        &_body
+            overflow-y: auto
+            max-height: 65vh
+            padding: 0
+            &::-webkit-scrollbar
+                width: 0
+                height: 0
+                
+            -ms-overflow-style: none
+        &_item
+            position: relative
+            background: url(../img/history/bg_date.png) center (center / cover) no-repeat
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 24px
+            height: 125px
+            width: 100%
+            font-weight: 500
+            font-size: 96px
+            line-height: 115px
+            color: #FFFFFF
+            mix-blend-mode: normal
+            margin-bottom: 30px
+            &:hover
+                color: $main-color
+            &_btn
+                position: absolute
+                height: 120px
+                width: 100%
+                border-radius: 30px
+                background: rgba(0, 0, 0, 0)
+                border: none
+                outline: none
+                +btn_active
+    
+    &_history
+        padding: 20px 20px
+        background: #fff
+        min-height: 600px
+        min-width: 700px
+        &_close
+            position: absolute
+            top: 3px
+            right: 15px
+            font-size: 70px
+            line-height: 40px
+            color: #000
+            cursor: pointer
+            z-index: 10
+        .pl
+            padding-left: 40px
+        .more
+            &_title
+                font-weight: 600
+                font-size: 40px
+                line-height: 40px
+                color: #241C14
+            &_subtitle
+                margin-top: 10px
+                font-weight: 600
+                font-size: 32px
+                line-height: 30px
+                color: $main-color 
+                &_mt0
+                    margin-top: 0 
+
+        ul
+            counter-reset: ul-numbers
+            li
+                font-weight: 500
+                font-size: 26px
+                line-height: 26px
+                color: #241C14
+                list-style: none
+                position: relative
+                padding-left: 15px
+                margin-top: 5px
+                white-space: nowrap
+                text-transform: none
+                &:before
+                    counter-increment: ul-numbers
+                    content: counter(ul-numbers) "."
+                    position: absolute
+                    left: 0px
+                    top: 0
+                    width: 5px
+                    text-align: right
+
+        a
+            background: url(../img/history/vinners.png) center (center / cover) no-repeat
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 200px
+            width: 100%
+            border-radius: 24px
+            font-weight: 600
+            font-size: 96px
+            line-height: 115px
+            color: #FFFFFF
+            &:hover
+                color: $main-color
+                transition: 0.2s all
+                text-decoration: none
+
+
         
-#tournament, #workout, #thanks, #participants
+#tournament, #workout, #thanks, #participants, #modal_tour, #modal_history
     display: none
 
 
