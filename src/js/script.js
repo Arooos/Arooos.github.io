@@ -44,7 +44,7 @@ $(document).ready(function(){
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        speed: 500,
+        speed: 300,
         cssEase: 'linear',
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/next.svg"></button>'
