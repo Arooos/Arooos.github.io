@@ -1,3 +1,113 @@
+@media (max-width: 1600px) {
+  .logo {
+    display: none;
+  }
+}
+@media (max-width: 1319px) {
+  .promo {
+    min-height: 700px;
+    padding-top: 100px;
+  }
+  .promo_logo {
+    font-size: 74px;
+  }
+  .promo_slogan {
+    text-align: left;
+  }
+  .anons_partners {
+    min-height: 580px;
+  }
+  .anons_partners .nearest, .anons_partners .partners {
+    padding: 20px 0 0 0;
+  }
+  .anons_partners .nearest_btn_1, .anons_partners .partners_btn_1 {
+    width: 160px;
+    height: 50px;
+  }
+  .anons_partners .nearest_btn_2, .anons_partners .partners_btn_2 {
+    width: 160px;
+    height: 50px;
+  }
+  .categories {
+    min-height: 620px;
+  }
+  .categories .main .front .categories_front {
+    padding: 155px 0 0 16px;
+    height: 400px;
+    width: 280px;
+  }
+  .categories .main .front .categories_front_title {
+    margin-bottom: 0;
+  }
+  .categories .main .front .categories_front_near {
+    line-height: 30px;
+  }
+  .categories .main .front .categories_front_org {
+    line-height: 30px;
+  }
+  .categories .main .back .categories_back {
+    height: 400px;
+    width: 280px;
+  }
+  .categories .main .back .categories_back_title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .categories .main .back .categories_back_address {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #241C14;
+    margin-bottom: 26px;
+  }
+  .categories .main .back .categories_back_address_near {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    color: #FF7A00;
+    margin-bottom: 15px;
+  }
+  .categories .main .back .categories_back_address_data {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3D342B;
+    margin-bottom: 10px;
+  }
+  .categories .main .back .categories_back_address_data span {
+    font-weight: 400;
+  }
+  .categories .main .back .categories_back_address_btn_1 {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .categories .main .back .categories_back_address_btn_2 {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .categories .history .carousel__history {
+    margin-top: 60px;
+  }
+  .categories .history .carousel__history__item {
+    width: 280px;
+    height: 200px;
+  }
+  .categories .history .carousel .slick-prev, .categories .history .carousel .slick-next {
+    left: -20px;
+  }
+  .categories .history .carousel .slick-next {
+    right: -20px;
+    left: auto;
+  }
+  .categories .courts .carousel__inner {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
 * {
   font-family: "Alumni Sans", sans-serif;
   padding: 0;
