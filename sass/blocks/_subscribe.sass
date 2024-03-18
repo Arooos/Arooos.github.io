@@ -1,0 +1,98 @@
+html body .subscribe
+	padding: 137px 0 134px 0
+	h2
+		position: relative
+		margin: auto
+		left: 0
+		right: 0
+		display: block
+		background: #fff
+		text-align: center
+		width: 700px
+	.wrap
+		height: 640px 
+		border: 4px solid $second-color
+		margin-top: -23px
+		display: flex
+		flex-direction: column
+		align-items: center
+		.title
+			width: 360px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 60px
+			height: 69px
+			.text
+				font-family: "Muller-Regular"
+				font-size: 20px
+				font-weight: 200
+				line-height: 24px
+				color: #000
+				margin-left: 17px
+		.form
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			height: 240px
+			margin-top: 50px
+			.form-name
+				position: relative
+				height: 60px
+				width: 500px
+				input
+					position: absolute
+					height: 100%
+					width: 100%
+					border: 1px solid #000000
+					background: transparent
+					outline: none
+					border-radius: 5px
+					font-size: 18px
+					line-height: 24px
+					transition: 0.1s ease
+					z-index: 10
+					&:focus
+						border: 1px solid $main-color
+					&:focus + .lable
+						transform: translate( 20px, -31px)
+						color: $main-color		
+						font-size: 13px
+						z-index: 11
+						background-color: #fff
+						padding: 0 5px
+				.lable
+					position: absolute
+					height: 20px
+					margin: auto 
+					top: 0
+					bottom: 0
+					padding-left: 24px
+					color: #666666
+					font-family: "Muller-Regular"
+					font-size: 18px
+					line-height: 24px
+					transition: 0.2s ease
+
+
+					
+
+
+		button    
+			@include button
+			margin-top: 48px
+			width: 250px
+			height: 51px
+            
+		.policy
+			margin-top: 25px
+			display: flex
+			align-items: center
+			flex-direction: column
+			font-family: "Muller-Regular"
+			font-size: 13px
+			font-weight: 200
+			line-height: 20px
+			span
+				color: $main-color
+			

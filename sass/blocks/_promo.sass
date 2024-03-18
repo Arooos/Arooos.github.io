@@ -1,0 +1,114 @@
+html body .promo
+	position: relative
+	height: 100vh
+	min-height: 540px
+	.logo
+		position: absolute
+		top: 50px
+		left: 110px
+	.descr
+		width: 50vw
+		display: flex
+		align-items: center
+		height: 100%
+		.item
+			padding: 120px 60px 120px 105px
+			.subtitle
+				font-family: "Muller-Regular"
+				margin-top: 30px
+				font-size: 21px
+				font-weight: 200
+				line-height: 30px
+				color: #000
+			.btn-item
+				margin-top: 45px
+				display: flex
+				button
+					@include button
+					width: 260px
+					height: 51px
+					&:hover
+						background-color: #FF7B59
+				.text
+					font-family: "Muller-Regular"
+					display: flex
+					align-items: center
+					margin-left: 30px
+					font-size: 16px
+					font-weight: 200
+					line-height: 16px
+					color: $text-color
+		.scroll
+			position: absolute
+			display: flex
+			justify-content: space-between
+			width: 250px
+			bottom: 48px
+			left: 110px
+			text-decoration: none
+			&:hover
+				left: 115px
+				width: 245px
+				img
+					width: 32px
+			img
+				width: 41px
+				height: 30px
+			.text
+				text-align: left
+				font-family: 'Muller-Medium'
+				font-size: 16px
+				font-weight: 200
+				line-height: 16px
+				color: $main-color
+	.video
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		overflow: hidden
+		padding: 20px 20px 20px 0
+		.bg-video
+			background-image: url(../img/promo/video.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+			width: 50vw
+			height: 100%
+		.play-btn
+			position: absolute
+			top: 50%  
+			left: 50% 
+			transform: translate(-50%, -60%)
+			.img
+				width: 250px
+				height: 250px
+			.text
+				font-family: "Muller-Medium"
+				font-size: 21px
+				font-weight: 200
+				line-height: 21px
+				color: $main-color
+				text-align: center
+				margin-top: 10px
+	.call
+		position: absolute
+		top: 50px
+		right: 89px
+		display: flex
+		align-items: center
+		text-decoration: none
+		&:hover
+			cursor: pointer
+			.text
+				color: $main-color
+		.img
+			width: 24px
+			height: 24px
+			margin-right: 7px
+		.text
+			font-family: "Muller-Medium"
+			font-size: 16px
+			font-weight: 100
+			line-height: 16px
+			color: #000

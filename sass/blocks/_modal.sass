@@ -1,0 +1,141 @@
+.bg-block
+	overflow: hidden	
+	padding-right: 15px	
+html body
+	.modal
+		position: fixed
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 10
+		opacity: 0
+		visibility: hidden
+		&.active
+			opacity: 1
+			visibility: visible
+		.modal-bg
+			height: 100%
+			width: 100%
+			background: rgba(0, 0, 0, 0.48)
+			backdrop-filter: blur(10px)
+			.modal-sent
+				position: absolute
+				margin: auto
+				left: 0
+				right: 0
+				bottom: 0
+				top: 0
+				padding: 0 4px
+				background: #fff
+				width: 976px
+				height: 681px
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				z-index: 11
+
+				opacity: 0
+				visibility: hidden
+				transition: 0.7s
+				&.active
+					opacity: 1
+					visibility: visible
+				.modal-close
+					position: absolute
+					top: 0
+					right: -60px
+					font-size: 70px
+					line-height: 40px
+					color: #ffffff
+					cursor: pointer
+				h2
+					position: relative
+					margin: 0 auto
+					background: #fff
+					text-align: center
+					width: 72%
+				.wrap
+					width: 100%
+					height: 100%
+					border: 4px solid $second-color
+					margin-top: -23px
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					.text
+						margin-top: 41px
+						text-align: center
+						font-size: 16px
+						line-height: 24px
+						font-weight: 200
+						font-family: "Muller-Regular"
+// html body 
+// 	.modal
+// 		width: 100%
+// 		height: 100vh
+// 		position: fixed
+// 		top: 0
+// 		right: 0
+// 		bottom: 0
+// 		left: 0
+// 		visibility: hidden
+// 		opacity: 0
+// 		transition: all 1s
+// 		pointer-events: none
+// 		&.active
+// 			opacity: 1
+// 			visibility: visible
+// 			pointer-events: all
+// 	.overlay
+// 		width: 100%
+// 		height: 100%
+// 		background: rgba(0, 0, 0, 0.5)
+// 		.modal-sent
+// 			position: absolute
+// 			margin: auto
+// 			left: 0
+// 			right: 0
+// 			bottom: 0
+// 			top: 0
+// 			padding: 0 0.4rem
+// 			background: #fff
+// 			width: 98.4rem
+// 			height: 68.1rem
+// 			display: flex
+// 			justify-content: center
+// 			align-items: center
+// 			flex-direction: column
+// 			z-index: 10
+// 			.modal-close
+// 				position: absolute
+// 				top: 0px
+// 				right: -60px
+// 				font-size: 70px
+// 				line-height: 40px
+// 				color: #ffffff
+// 				cursor: pointer
+// 			h2
+// 				position: relative
+// 				margin: 0 auto
+// 				background: #fff
+// 				text-align: center
+// 				width: 72%
+// 			.wrap
+// 				width: 100%
+// 				height: 100%
+// 				border: 0.4rem solid $second-color
+// 				margin-top: -23px
+// 				display: flex
+// 				flex-direction: column
+// 				align-items: center
+// 				justify-content: center
+// 				.text
+// 					margin-top: 4.1rem
+// 					text-align: center
+// 					font-size: 1.6rem
+// 					line-height: 2.4rem
+// 					font-weight: 200
+// 					font-family: "Muller-Regular"
