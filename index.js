@@ -75,8 +75,4 @@ window.onclick = function (event)
     };
 };
 
-const modalBtns = document.querySelectorAll('.modal-open');
-const modals = document.querySelectorAll('.modal');
-
-
 
